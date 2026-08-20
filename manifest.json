@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "yander.feynman",
+  "name": "Feynman Buddy",
+  "version": "1.0.0",
+  "author": "yander",
+  "description": "Explain a concept to a five-year-old who keeps asking why, then get a gap list",
+  "kinds": [
+    "overlay",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "overlay": "Feynman.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Feynman Buddy",
+    "description": "Explain something to a curious five-year-old and find out what you don't actually know",
+    "category": "AI",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  },
+  "feynman": {
+    "gapDir": "Documents/feynman",
+    "maxTurns": 8,
+    "kidModel": "claude-haiku-4-5",
+    "judgeModel": "claude-sonnet-5"
+  }
+}
